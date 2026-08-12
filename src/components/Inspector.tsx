@@ -70,7 +70,7 @@ export default function Inspector({ nodeId, onClose }: { nodeId: string; onClose
             onChange={(e) => updateNode(nodeId, { parentId: e.target.value || null })}
             className="w-full rounded bg-neutral-900 border border-neutral-700 px-2 py-1.5 text-sm"
           >
-            <option value="">(top-level — no parent)</option>
+            <option value="">(top-level - no parent)</option>
             {resources
               .filter((r) => r.id !== nodeId)
               .map((r) => (

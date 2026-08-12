@@ -17,14 +17,12 @@ export default class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    // Swap for a real error-reporting call (Sentry, etc.) in production.
     console.error('Permissable crashed:', error, info.componentStack)
   }
 
   handleReset = () => {
     // The graph itself lives in localStorage via zustand/persist, so a
-    // reload alone recovers cleanly in the vast majority of cases — no
-    // need to nuke saved data just because a render threw once.
+    // reload alone recovers cleanly in the vast majority of cases
     this.setState({ error: null })
     window.location.reload()
   }
@@ -42,7 +40,7 @@ export default class ErrorBoundary extends Component<Props, State> {
             <AlertTriangle className="mx-auto mb-4 text-amber-400" size={32} />
             <h1 className="text-lg font-semibold mb-2">Something went wrong</h1>
             <p className="text-sm text-neutral-400 mb-6">
-              Permissable hit an unexpected error while rendering. Your saved graph is untouched — reloading
+              Permissable hit an unexpected error while rendering. Your saved graph is untouched - reloading
               usually fixes this.
             </p>
             <div className="flex items-center justify-center gap-2">

@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 // vite-plugin-pwa injects the actual registration logic at build time via
-// the virtual module below — this is a no-op import in dev.
+// the virtual module below - this is a no-op import in dev.
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   import('virtual:pwa-register').then(({ registerSW }) => {
     registerSW({ immediate: true })

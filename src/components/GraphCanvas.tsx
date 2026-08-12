@@ -42,19 +42,18 @@ export default function GraphCanvas({
   )
 
   // Dragging an edge from a role -> permission -> resource creates a grant.
-  // We treat a role->permission connection as "staged" implicitly by requiring
+  // treat a role->permission connection as "staged" implicitly by requiring
   // the user to connect role directly to a permission that's already linked to
   // a resource is ambiguous, so instead: connecting ANY two nodes among
   // role/permission/resource triples is handled by drag-connect role->resource
   // through an intermediate permission picker is overkill for a canvas gesture;
   // simplest robust UX: connecting role -> permission stages nothing on its own,
-  // real grants are made in the Inspector's "Add Grant" control (explicit and
-  // unambiguous about which permission+resource pair is intended).
+  // real grants are made in the Inspector's "Add Grant" control.
   const onConnect = useCallback(
     (_c: Connection) => {
       // Intentionally a no-op on canvas; grants are created explicitly via the
       // Inspector panel so a Role→Permission→Resource triple is always fully
-      // specified. See comment above.
+      // specified. See above comment for understanding..
     },
     [addGrant],
   )
