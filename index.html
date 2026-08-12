@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>Permissable - Visual RBAC Builder</title>
+    <meta name="description" content="Design roles, permissions, and resource hierarchies as a graph. Test 'can user X do Y' access scenarios live, then export as Express or Next.js middleware." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="canonical" href="https://permissable.vercel.app/" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Permissable" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Permissable — Visual RBAC Builder" />
+    <meta property="og:description" content="Design roles, permissions, and resource hierarchies as a graph. Simulate access scenarios live, export as Express or Next.js middleware." />
+    <meta property="og:image" content="https://permissable.vercel.app/og-image.png" />
+    <meta property="og:url" content="https://permissable.vercel.app/" />
+    <meta property="og:site_name" content="Permissable" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Permissable — Visual RBAC Builder" />
+    <meta name="twitter:description" content="Design RBAC as a graph, simulate access live, export as middleware." />
+    <meta name="twitter:image" content="https://permissable.vercel.app/og-image.png" />
+
+    <meta name="color-scheme" content="dark" />
+    <noscript>
+      <style>
+        #root::before {
+          content: "Permissable requires JavaScript to run.";
+          display: block;
+          padding: 2rem;
+          font-family: system-ui, sans-serif;
+          color: #e5e5e5;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="bg-neutral-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
