@@ -7,7 +7,7 @@ live, and export the whole thing as drop-in Express or Next.js middleware.
 ## Setup
 
 ```bash
-git clone https://github.com/byllzz/permissable.git
+git clone https://github.com/bilalmlkdev/permissable.git
 cd permissable
 npm install
 npm run dev
@@ -98,8 +98,8 @@ What's already wired up:
 
 ### Deploying
 
-Repo: https://github.com/byllzz/permissable - connect this repo directly in
-the Vercel dashboard (Import Project → pick `byllzz/permissable`) and it
+Repo: https://github.com/bilalmlkdev/permissable - connect this repo directly in
+the Vercel dashboard (Import Project → pick `bilalmlkdev/permissable`) and it
 deploys using the committed `vercel.json`, no extra config needed. Every
 push to `main` redeploys.
 
